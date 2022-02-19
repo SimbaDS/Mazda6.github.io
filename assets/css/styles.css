@@ -210,23 +210,23 @@ nav {
 
 .slide_image1 {
   /*пикчи*/
-  background-image: url(/assets/images/gallery/11.jpg);
+  background-image: url(assets/images/gallery/11.jpg);
 }
 
 .slide_image2 {
-  background-image: url(/assets/images/gallery/12.png);
+  background-image: url(assets/images/gallery/12.png);
 }
 
 .slide_image3 {
-  background-image: url(/assets/images/gallery/13.png);
+  background-image: url(assets/images/gallery/13.png);
 }
 
 .slide_image4 {
-  background-image: url(/assets/images/gallery/14.png);
+  background-image: url(assets/images/gallery/14.png);
 }
 
 .slide_image5 {
-  background-image: url(/assets/images/gallery/15.jpg);
+  background-image: url(assets/images/gallery/15.jpg);
 }
 
 .slide--gallery h3 {
@@ -381,13 +381,13 @@ nav {
 }
 
 .slide__background--design {
-  background: url(/assets/images/slider/m6_carousel_design_2-min222.png)
+  background: url(assets/images/slider/m6_carousel_design_2-min222.png)
     no-repeat center;
   background-size: cover;
 }
 
 .slide__background--miltimedia {
-  background: url(/assets/images/slider/m6_carousel_multimedia222.png) no-repeat
+  background: url(assets/images/slider/m6_carousel_multimedia222.png) no-repeat
     center;
   background-size: cover;
 }
@@ -399,7 +399,7 @@ nav {
 }
 
 .slide__background--technology {
-  background: url(/assets/images/slider/m6_carousel_technology222.png) no-repeat
+  background: url(assets/images/slider/m6_carousel_technology222.png) no-repeat
     center;
   background-size: cover;
 }
