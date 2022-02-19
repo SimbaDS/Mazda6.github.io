@@ -187,60 +187,67 @@ nav {
 
 /* GALLERY */
 
-.gallery__inner {
+.gallery_inner {
+  /*содержимое галлереи */
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;  /* одинаковое  горизонатальное просранство между собой*/
   height: 800px;
+  /*align-items: center;  /*вертикальное по центру*/
 }
 
-.gallery__item-left {
-  display: block;
-}
-
-.gallery__item-left:hover {
-  background: linear-gradient(45deg, #eecda3, #ef629f);
-  animation: gradient 10s ease-in-out infinite;
-  background-size: 110% 110%;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-.gallery__item-middle {
-  z-index: 20;
-  margin-left: -43%;
-}
-
-.gallery__item-right {
-  z-index: 30;
-  margin-left: -43%;
-}
-
-.item__text {
-  font-size: 35px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  text-align: center;
+.slide--gallery {
+  /* сам слайд и его фон параметры*/
+  height: 800px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  top: -50%;
+  transition: all 500ms ease-in-out; /*плавная анимация смены слайда*/
 }
 
-.item__text_posRight {
-  left: 32%;
-  width: 68%;
+.slide_image1 {
+  /*пикчи*/
+  background-image: url(/assets/images/gallery/11.jpg);
 }
 
-.item__text_posLeft {
-  right: 20%;
+.slide_image2 {
+  background-image: url(/assets/images/gallery/12.png);
+}
+
+.slide_image3 {
+  background-image: url(/assets/images/gallery/13.png);
+}
+
+.slide_image4 {
+  background-image: url(/assets/images/gallery/14.png);
+}
+
+.slide_image5 {
+  background-image: url(/assets/images/gallery/15.jpg);
+}
+
+.slide--gallery h3 {
+  /*h3*/
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.active {
+  /* ширина активного флекс элемента - чем > тем шире*/
+  flex: 10;
+}
+
+.slide--gallery.active h3 {
+  /* анимация на прозрачность */
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 /* CONFIGURATE */
@@ -374,25 +381,25 @@ nav {
 }
 
 .slide__background--design {
-  background: url(../images/slider/m6_carousel_design_2-min222.png)
+  background: url(/assets/images/slider/m6_carousel_design_2-min222.png)
     no-repeat center;
   background-size: cover;
 }
 
 .slide__background--miltimedia {
-  background: url(../images/slider/m6_carousel_multimedia222.png) no-repeat
+  background: url(/assets/images/slider/m6_carousel_multimedia222.png) no-repeat
     center;
   background-size: cover;
 }
 
 .slide__background--safety {
-  background: url(../images/slider/m6_carousel_safety222.png) no-repeat
+  background: url(/assets/images/slider/m6_carousel_safety222.png) no-repeat
     center;
   background-size: cover;
 }
 
 .slide__background--technology {
-  background: url(../images/slider/m6_carousel_technology222.png) no-repeat
+  background: url(/assets/images/slider/m6_carousel_technology222.png) no-repeat
     center;
   background-size: cover;
 }

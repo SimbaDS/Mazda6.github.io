@@ -22,3 +22,23 @@ $(document).ready(function(){
   document.getElementById('form--4').reset();
   document.getElementById('form--5').reset();
   document.getElementById('form--6').reset();
+
+/*/slider*/
+
+/*gallery*/
+const slides = document.querySelectorAll(".slide--gallery")
+
+for (const slide of slides) {
+  slide.addEventListener("click", () => {
+    clearActiveClasses()
+
+    slide.classList.add('active')
+  })
+}
+
+function clearActiveClasses() {
+  slides.forEach((slide) => {
+    slide.classList.remove("active")
+  })
+}
+/* //gallery */
