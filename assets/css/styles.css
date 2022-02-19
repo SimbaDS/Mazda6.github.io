@@ -393,7 +393,7 @@ nav {
 }
 
 .slide__background--safety {
-  background: url(/assets/images/slider/m6_carousel_safety222.png) no-repeat
+  background: url(assets/images/slider/m6_carousel_safety222.png) no-repeat
     center;
   background-size: cover;
 }
